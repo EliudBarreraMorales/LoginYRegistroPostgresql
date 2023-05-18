@@ -1,4 +1,3 @@
-
 body {
   background-color: #435165;
   margin: 0;
@@ -8,13 +7,14 @@ body {
 .login-box
  {
   height: 50%;
-  width: 30%;
-  border: 1px solid rgb(158, 45, 60);
-  margin-left: 35%;
-  margin-top: 10%;
+  width: 35%;
+  border: 1px solid rgb(158, 45, 60);/* Agrega un borde de 1 píxel de ancho con un color rojo oscuro especificado en formato RGB.*/
+  border-radius: 15px;
+  margin:5% auto;
+  margin-top: 4%;
   position: relative;
        box-shadow: 21px 12px 24px 10px rgba(0, 0, 0, .5);
-       background: #dadada;
+       background: #dadada;/*  Establece el color de fondo del elemento como un gris claro.*/
  }
 
 /* estilos para el titulo de login*/

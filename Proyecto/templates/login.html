@@ -7,22 +7,32 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
     id="bootstrap-css">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
+<style>
+  div.text-center{
+    background-color: black;
+    color: white;
+    font-family: Candara;
+    font-size: 2.5em;
+    border-radius: 15px;
+  }
+</style>
 <body style="background-color:#4789d4;"> <!-- color del fondo de el login-->
   <div class="login-box">
-    <div class="login-header">Login</div>
+    <div class="text-center">Login</div>
     <div class="login-body">
-      <p>Introduzca su nombre de usuario y contraseña</p>
+      <p class="text-center">Introduzca su nombre de usuario y contraseña</p>
       <form class="form-group" action="{{ url_for('login') }}" method="post">
         <label>Usuario</label>
         <input type="text" class="form-control" name="username" placeholder="Username" id="username" required>
-        <label>Contraseña</label>
+        <label class="mt-2">Contraseña</label>
         <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
-        <input type="checkbox" value="checked"><b>Remember</b>
-        <input type="submit" value="Login" class="form-control btn btn-success " name="">
+        <input type="checkbox" value="checked" class="mr-1"><b>Remember</b>
+        <input type="submit" value="Login" class="form-control btn btn-success mt-3" name="">
       </form>
 
       {% with messages = get_flashed_messages() %}
